@@ -6,7 +6,7 @@ public static class WebElementExtensions
     {
         var newElement = webElement.FindElement(By.XPath(xPath));
 
-        if (string.IsNullOrWhiteSpace(attribute))
+        if (!string.IsNullOrWhiteSpace(attribute))
             return newElement.GetAttribute(attribute);
 
         return newElement.Text;

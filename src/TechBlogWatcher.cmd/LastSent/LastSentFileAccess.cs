@@ -4,7 +4,7 @@ public static class LastSentFileAccess
 {
     private static readonly string FilePath;
 
-    static LastSentFileAccess() => FilePath = string.Empty;
+    static LastSentFileAccess() => FilePath = Path.Combine(Directory.GetCurrentDirectory(), "lastsent");
 
     /// <summary>
     /// Read last sent date from file, or use default value if file doesn't exist
