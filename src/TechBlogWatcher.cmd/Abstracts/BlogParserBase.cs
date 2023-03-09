@@ -58,7 +58,7 @@ public abstract class BlogParserBase
                 var postDate = postNode.ParseDateByXPath(xPaths.PostDateXPath);
                 if (postDate < lastSentDate) continue;
                 var postTitle = postNode.ParseTextByXPath(xPaths.TitleXPath);
-                var postUrl = postNode.ParseTextByXPath(xPaths.UrlXHath, xPaths.Attribute);
+                var postUrl = postNode.ParseTextByXPath(xPaths.UrlXPath, "href");
                 var post = new BlogPost(blogInfo.Name, postTitle, postUrl);
                 newPosts.Add(post);
             }

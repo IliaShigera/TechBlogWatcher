@@ -3,7 +3,7 @@
 public interface IBlogParser
 {
     BlogInfo BlogInfo { get; }
-    BlogPostXPaths PostXPaths { get; }
+    BlogPostXPaths BlogPostXPaths { get; }
     
     Task<IReadOnlyList<BlogPost>> ParseBlogAsync(DateTime lastSentDate);
 }
