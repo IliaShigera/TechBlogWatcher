@@ -1,4 +1,4 @@
-﻿namespace TechBlogWatcher.cmd.Notifiers;
+﻿namespace TechBlogWatcher.cmd.Abstracts;
 
 public interface INotifier
 {

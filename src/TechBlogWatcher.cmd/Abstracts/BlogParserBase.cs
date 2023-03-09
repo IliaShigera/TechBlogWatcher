@@ -1,4 +1,4 @@
-﻿namespace TechBlogWatcher.cmd.BlogParsers.Common;
+﻿namespace TechBlogWatcher.cmd.Abstracts;
 
 public abstract class BlogParserBase
 {
@@ -42,7 +42,7 @@ public abstract class BlogParserBase
         return date;
     }
 
-    protected virtual IReadOnlyList<BlogPost> ParseBlogPostsByXPaths(BlogInfo blogInfo, BlogPostXPaths xPaths, DateTime lastSentDate)
+    protected IReadOnlyList<BlogPost> ParseBlogPostsByXPaths(BlogInfo blogInfo, BlogPostXPaths xPaths, DateTime lastSentDate)
     {
         var newPosts = new List<BlogPost>();
         

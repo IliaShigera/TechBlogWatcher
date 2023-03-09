@@ -1,4 +1,4 @@
-﻿namespace TechBlogWatcher.cmd.Notifiers.Telegram;
+﻿namespace TechBlogWatcher.cmd.TelegramNotifier;
 
 public sealed class TelegramNotifier : INotifier
 {
