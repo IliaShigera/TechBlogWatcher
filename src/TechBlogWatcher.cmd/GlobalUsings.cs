@@ -8,3 +8,5 @@ global using OpenQA.Selenium.Support.UI;
 global using SeleniumExtras.WaitHelpers;
 global using TechBlogWatcher.cmd.Extensions;
 global using TechBlogWatcher.cmd.Models;
+global using Telegram.Bot;
+global using Telegram.Bot.Types.Enums;
