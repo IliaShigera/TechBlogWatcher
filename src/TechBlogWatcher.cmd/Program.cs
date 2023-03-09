@@ -1,7 +1,8 @@
 ﻿IReadOnlyList<IBlogParser> parsers = new List<IBlogParser>
 {
     new LinkedInBlogParser(),
-    new CodeMazeParser()
+    new CodeMazeParser(),
+    new TheMorningBrewParser()
 };
 
 IReadOnlyList<INotifier> notifiers = new List<INotifier>
